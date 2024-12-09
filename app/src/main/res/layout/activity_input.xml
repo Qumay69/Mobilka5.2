@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Поле для ввода стоимости аренды -->
+    <EditText
+        android:id="@+id/editTextCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Стоимость аренды (в часах)"
+        android:inputType="number"/>
+
+    <!-- Группа радиокнопок для выбора режима аренды -->
+    <RadioGroup
+        android:id="@+id/radioGroupMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioTaxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Такси" />
+
+        <RadioButton
+            android:id="@+id/radioMinibus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Микроавтобус" />
+
+        <RadioButton
+            android:id="@+id/radioBus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Автобус" />
+    </RadioGroup>
+
+    <!-- Кнопка для сохранения данных -->
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
